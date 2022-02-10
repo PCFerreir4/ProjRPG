@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tela de Login</title>
+        <link href="telaLogin.css" rel="stylesheet">
+        <script src="jquery-3.6.0,min.js"></script>
+        <script>
+            $(document).ready(function() {  
+                $('div').fadeIn(1000).removeClass('hidden');
+            })
+        </script>
+
+       
+    </head>
+    
+    <body>
+        <header>
+            <div id="headBlock">RPG do Luizinho</div>    
+        </header>
+        
+        <main>
+            <div class= "container">
+                
+                <div id="card" class="hidden">
+                    <h1>Bem vindo, <br> 
+                        aventureiro!</h1>
+
+                    <div class="label-float">
+                        <input type="text" id="login" placeholder=" " required/>
+                        <label for="login">Usuario</label>
+                    </div>
+                        
+                    <div class="label-float">
+                        <input type="password" id="pass" placeholder=" " required/>
+                        <label for="pass">Senha</label>
+                    </div>
+                    
+                    <div class="justify-center">
+                        <a href="home.html"><button>Entre no mundo</button></a>
+                    </div>
+                        
+                    <div class="justify-center">
+                            <a href="cadastro.html"><button>Novo jogador</button></a>
+                        </button>
+                    </div>                  
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

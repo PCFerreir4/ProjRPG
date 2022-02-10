@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+* {
+    font-family: 'Calistoga', sans-serif;
+}
+
+body {
+    background-image: url("imgs/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#headBlock {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(117, 87, 20);
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0 0 #00000080;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 150px auto;
+}
+
+#card {    
+    text-align:center;
+    background-color: rgba(255, 255, 255, 0.7   );
+    padding: 30px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 0px 0px #00000080;    
+}
+.hidden {
+    display: none;
+}
+
+h1 {
+    text-align:start;
+    margin-bottom: 20px;
+    color: rgba(98, 152, 56)
+}
+
+.label-float input {
+    width: 100%;
+    padding: 5px;
+    border: 0;
+    border-bottom: 2px solid rgb(45, 97, 3);
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    border-radius: 0;
+    transition: all .3s ease-out;
+}
+.label-float {
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.label-float label {
+    color: rgba(98, 152, 56);
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+.label-float ::placeholder {
+    color: transparent;
+}
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label{
+  font-size: 13px;
+  margin-top: 0;
+  color: rgba(45, 97, 3);
+
+}
+
+button {
+    background-color: white;
+    border-color: rgba(45, 97, 3);
+    color: rgba(45, 97, 3);
+    padding: 4px;
+    font-weight:lighter;
+    font-size: 10pt;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+button:hover {
+    background-color: rgba(98, 152, 56);
+    color: white;
+    transition: all .2s ease-out;
+}
+
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    color: rgba(45, 97, 3);
+}
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
+  
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
